@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leal Impacto Creativo - Medellín y Antioquia</title>
+    <title>Leal Impacto Creativo - Ingeniería y Publicidad</title>
+
+    <meta property="og:title" content="Leal Impacto Creativo - Ingeniería y Publicidad">
+    <meta property="og:description" content="Especialistas en vallas publicitarias y estructuras metálicas de alto impacto.">
+    <meta property="og:image" content="https://lealimpactocreativo.github.io/lealimpacto/valla-perfil1.jpg">
+    <meta property="og:url" content="https://lealimpactocreativo.github.io/lealimpacto/">
+    <meta property="og:type" content="website">
+
     <style>
         :root {
             --azul-profesional: #0a192f;
@@ -23,7 +30,7 @@
             line-height: 1.6;
         }
 
-        /* --- PORTADA --- */
+        /* PORTADA */
         .portada {
             width: 100%;
             height: auto;
@@ -31,7 +38,7 @@
         }
         .portada img { width: 100%; height: auto; display: block; }
 
-        /* --- CUERPO PRINCIPAL --- */
+        /* CUERPO PRINCIPAL */
         .container {
             max-width: 1200px;
             margin: 40px auto;
@@ -39,10 +46,10 @@
         }
 
         .header-title { text-align: center; margin-bottom: 50px; }
-        .header-title h1 { font-size: 2.2rem; color: var(--azul-brillante); text-transform: uppercase; margin-bottom: 10px; }
+        .header-title h1 { font-size: 2.2rem; color: var(--azul-brillante); text-transform: uppercase; }
         .header-title p { font-size: 1.1rem; opacity: 0.9; }
 
-        /* --- GALERÍA PROFESIONAL --- */
+        /* GALERÍA PROFESIONAL */
         .galeria {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -56,12 +63,13 @@
             box-shadow: 0 10px 30px rgba(0,0,0,0.5);
             transition: 0.3s;
         }
+
         .tarjeta:hover { transform: translateY(-10px); }
         .tarjeta img { width: 100%; height: auto; display: block; }
         .info { padding: 15px; color: #333; text-align: center; }
         .info h3 { font-size: 1rem; color: var(--azul-profesional); }
 
-        /* --- FOOTER ESTILO PROFESIONAL (Basado en el video) --- */
+        /* FOOTER ESTILO PROFESIONAL */
         footer {
             background-color: var(--gris-footer);
             padding: 60px 20px 20px;
@@ -104,6 +112,7 @@
             font-size: 0.8rem;
             transition: 0.3s;
         }
+
         .social-btn:hover { background: var(--azul-brillante); }
 
         .copyright {
@@ -115,13 +124,14 @@
             opacity: 0.5;
         }
 
-        /* --- WIDGET WHATSAPP --- */
+        /* WIDGET WHATSAPP */
         .wsp-container {
             position: fixed;
             bottom: 25px;
             right: 25px;
             z-index: 1000;
         }
+
         .wsp-card {
             width: 280px;
             background: var(--blanco);
@@ -132,9 +142,12 @@
             display: none;
             animation: fadeIn 0.3s ease;
         }
+
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
         .wsp-header { background: var(--verde-whatsapp); padding: 12px; color: white; display: flex; justify-content: space-between; }
         .wsp-body { padding: 15px; color: #444; font-size: 0.9rem; background: #f9f9f9; }
+        
         .wsp-btn {
             display: block;
             background: var(--verde-whatsapp);
@@ -146,6 +159,7 @@
             border-radius: 20px;
             font-weight: bold;
         }
+
         .wsp-icon {
             background: var(--verde-whatsapp);
             width: 55px;
@@ -189,7 +203,7 @@
                 <h4>Contacto</h4>
                 <p>📍 Medellín, Antioquia</p>
                 <p>📞 WhatsApp: 310 4136519</p>
-                <p>✉ lealimpactocreativo@gmail.com</p>
+                <p>✉️ lealimpactocreativo@gmail.com</p>
             </div>
             <div class="footer-section">
                 <h4>Menú</h4>
@@ -212,7 +226,7 @@
             <div class="footer-section">
                 <h4>Síguenos</h4>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/share/1EQvnkPAwP/" class="social-btn">Facebook</a>
+                    <a href="https://www.facebook.com/share/1EQvnKPAwP/" class="social-btn">Facebook</a>
                     <a href="https://www.instagram.com/lealimpactocreativo" class="social-btn">Instagram</a>
                 </div>
             </div>
@@ -226,7 +240,7 @@
         <div class="wsp-card" id="wspCard">
             <div class="wsp-header">
                 <span>Leal Impacto Creativo</span>
-                <span style="cursor:pointer" onclick="toggleWsp()">✕</span>
+                <span style="cursor:pointer" onclick="toggleWsp()">X</span>
             </div>
             <div class="wsp-body">Hola, ¿En qué podemos ayudarle con su publicidad en Antioquia?</div>
             <a href="https://wa.me/573104136519" class="wsp-btn" target="_blank">Abrir WhatsApp</a>
@@ -242,5 +256,6 @@
             card.style.display = (card.style.display === 'block') ? 'none' : 'block';
         }
     </script>
+
 </body>
 </html>
